@@ -202,12 +202,11 @@ def getAwardInfo(lst, fpath):
             if "Aspect Ratio" in r.keys():
                 tech["Aspect Ratio"] = r.get("Aspect Ratio")+":1".replace("\n","")
             res[14] = tech                                                             # technical specs
-
+            f.writelines(','.join(map(str, res)) + '\n')
         except:
             print(res[0]+'\n')
             continue
         print(res)
-        f.writelines(','.join(map(str, res)) + '\n')
         print('\r当前进度:{:.2f}%'.format(count * 100 / len(lst)), end='')
     f.close()
 
