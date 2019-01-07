@@ -438,11 +438,11 @@ def getAwardInfo(lst, fpath):
                 res[30] = ""
                 res[31] = ""
                 res[32] = ""
+            f.writelines(','.join(map(str, res)) + '\n')
         except:
             print(res[0])
             continue
         print(res)
-        f.writelines(','.join(map(str, res)) + '\n')
         print('\r当前进度:{:.2f}%'.format(count * 100 / len(lst)), end='')
     f.close()
 
