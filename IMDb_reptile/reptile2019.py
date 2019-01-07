@@ -2,6 +2,9 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+#############################  说明  #####################
+#                 爬取30000多部电影的详细信息
+##########################################################
 
 onclick = 'http://www.imdb.com/search/title?title_type=feature&release_date=2000-01-01,2015-12-31&countries=us&languages=en&count=250&start={0}&ref_=adv_nxt'
 pathOne ='https://www.imdb.com/search/title?title_type=feature&release_date=2000-01-01,2005-12-31&countries=us&languages=en&count=250&start={0}&ref_=adv_nxt'
