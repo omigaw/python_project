@@ -2,7 +2,9 @@
 import requests
 from bs4 import BeautifulSoup
 import re
-
+###################################### 说明  ####################################
+#                    爬取2000-2015段30000多电影数据的cast&crew
+#################################################################################
 onclick = 'http://www.imdb.com/search/title?title_type=feature&release_date=2000-01-01,2015-12-31&countries=us&languages=en&count=250&start={0}&ref_=adv_nxt'
 pathOne ='https://www.imdb.com/search/title?title_type=feature&release_date=2000-01-01,2005-12-31&countries=us&languages=en&count=250&start={0}&ref_=adv_nxt'
 pathTwo = 'https://www.imdb.com/search/title?title_type=feature&release_date=2006-01-01,2009-12-31&countries=us&languages=en&start={0}&ref_=adv_nxt'
