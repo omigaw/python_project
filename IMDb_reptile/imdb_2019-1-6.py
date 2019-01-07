@@ -24,7 +24,7 @@ def getHTMLText(url, code='utf-8'):
 def getActorList(lst):
 
     # 1-7283
-    for i1 in range(1):
+    for i1 in range(30):
         print(i1)
         actorURL = pathOne.format(1+250*i1)
         html = getHTMLText(actorURL)
